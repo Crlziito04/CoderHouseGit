@@ -1,0 +1,18 @@
+header {
+  nav {
+    background-image: linear-gradient(to left, black, #434038ff);
+    .container-fluid {
+      background-image: linear-gradient(to right, black, #434038ff);
+      .nav-link {
+        color: $color1;
+      }
+      .nav-link:hover {
+        font-size: 1.3em;
+        border-top: 2px solid $color4;
+        border-bottom: 2px solid $color4;
+        transition: all 0.5s;
+        border-radius: 2px;
+      }
+    }
+  }
+}

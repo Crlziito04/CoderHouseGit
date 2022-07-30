@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header nav {
+  background-image: linear-gradient(to left, black, #434038);
+}
+header nav .container-fluid {
+  background-image: linear-gradient(to right, black, #434038);
+}
+header nav .container-fluid .nav-link {
+  color: white;
+}
+header nav .container-fluid .nav-link:hover {
+  font-size: 1.3em;
+  border-top: 2px solid #475977;
+  border-bottom: 2px solid #475977;
+  transition: all 0.5s;
+  border-radius: 2px;
+}
+
+body {
+  font-family: "Staatliches", cursive;
+}
+body video {
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+body main {
+  margin-top: 10px;
+}
+body main h1 {
+  font-size: 3rem;
+}
+body main .nosotros {
+  margin-bottom: 20px;
+}
+body main .nosotros .nleft {
+  height: 400px;
+  background-image: url(../media/atencion.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: black;
+}
+body main .nosotros .nright {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 400px;
+  background-color: rgba(0, 0, 0, 0.2);
+  text-align: justify;
+}
+body main .nosotros .nright h2 {
+  font-size: 2em;
+  text-align: center;
+}
+body main .reserva {
+  text-align: center;
+}
+body main .reserva h2 {
+  font-size: 2em;
+}
+
+.sec1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.sec1 .form {
+  background-color: rgba(0, 0, 0, 0.3);
+  border: solid white 2px;
+  margin: auto;
+  width: 90%;
+  max-width: 400px;
+  padding: 4.5em 3em;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+.sec1 .form .form__title {
+  font-size: 2rem;
+  margin-bottom: 0.5em;
+}
+.sec1 .form .form__container {
+  margin-top: 3em;
+  display: grid;
+  gap: 2.5em;
+}
+.sec1 .form .form__group {
+  position: relative;
+  color: #57577e;
+}
+.sec1 .form .form__label {
+  color: #57577e;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 5px;
+  transform: translateY(10px);
+  transition: transform 0.5s, color 0.3s;
+}
+.sec1 .form .form__line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #3866f2;
+  transform: scale(0);
+  transform: left bottom;
+  transition: transform 0.4s;
+}
+.sec1 .form .form__input {
+  width: 100%;
+  background: none;
+  color: #706c6c;
+  font-size: 1rem;
+  padding: 0.6em 0.3em;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #57577e;
+}
+.sec1 .form .select__form {
+  color: #57577e;
+  background-color: rgba(0, 0, 0, 0.2);
+  margin-top: 5px;
+}
+.sec1 .form .form__submit {
+  background: #1f7ea7;
+  color: white;
+  font-weight: 300;
+  font-size: 1rem;
+  margin-top: 10px;
+  padding: 1em 2em;
+  border: none;
+  border-radius: 0.5em;
+}
+.sec1 .form .form__submit:hover {
+  background-color: #2f71e8;
+}
+
+.form__input:focus + .form__label,
+.form__input:not(:placeholder-shown) + .form__label {
+  transform: translateY(-12px) scale(0.7);
+  transform-origin: left top;
+  color: #1f7ea7;
+}
+
+.form__input:focus + .form__label,
+.form__input:not(:placeholder-shown) {
+  color: #4d4646;
+}
+
+.footer {
+  background-image: linear-gradient(to left, black, #434038);
+  margin-top: 100px;
+}
+.footer .footer__arriba a i {
+  position: fixed;
+  bottom: 160px;
+  right: 1.5em;
+  margin-right: 2px;
+  border: white solid 2px;
+  border-radius: 50%;
+  padding: 5px;
+  color: white;
+  background-color: red;
+}
+.footer .footer__arriba a i:hover {
+  font-size: 25px;
+  transition: 0.4s;
+}
+.footer .footer__redes {
+  margin-left: 20px;
+}
+.footer .footer__redes h4 {
+  font-size: 1.5rem;
+}
+.footer .footer__redes img {
+  margin-top: 20px;
+}
+.footer .footer__ubicanos {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 20px;
+}
+.footer h4 {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 425px) {
+  .form__title {
+    font-size: 1.8rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

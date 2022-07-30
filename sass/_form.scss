@@ -1,0 +1,91 @@
+.sec1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  .form {
+    background-color: $color9;
+    border: solid white 2px;
+    margin: auto;
+    width: 90%;
+    max-width: 400px;
+    padding: 4.5em 3em;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -5px $color9;
+    text-align: center;
+    .form__title {
+      font-size: 2rem;
+      margin-bottom: 0.5em;
+    }
+    .form__container {
+      margin-top: 3em;
+      display: grid;
+      gap: 2.5em;
+    }
+    .form__group {
+      position: relative;
+      color: $color10;
+    }
+    .form__label {
+      color: $color10;
+      cursor: pointer;
+      position: absolute;
+      top: 0;
+      left: 5px;
+      transform: translateY(10px);
+      transition: transform 0.5s, color 0.3s;
+    }
+    .form__line {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background: $color14;
+      transform: scale(0);
+      transform: left bottom;
+      transition: transform 0.4s;
+    }
+    .form__input {
+      width: 100%;
+      background: none;
+      color: $color11;
+      font-size: 1rem;
+      padding: 0.6em 0.3em;
+      border: none;
+      outline: none;
+      border-bottom: 1px solid $color10;
+    }
+    .select__form {
+      color: $color10;
+      background-color: $color8;
+      margin-top: 5px;
+    }
+
+    .form__submit {
+      background: $color12;
+      color: $color1;
+      font-weight: 300;
+      font-size: 1rem;
+      margin-top: 10px;
+      padding: 1em 2em;
+      border: none;
+      border-radius: 0.5em;
+    }
+    .form__submit:hover {
+      background-color: $color15;
+    }
+  }
+}
+
+.form__input:focus + .form__label,
+.form__input:not(:placeholder-shown) + .form__label {
+  transform: translateY(-12px) scale(0.7);
+  transform-origin: left top;
+  color: $color12;
+}
+
+.form__input:focus + .form__label,
+.form__input:not(:placeholder-shown) {
+  color: $color13;
+}

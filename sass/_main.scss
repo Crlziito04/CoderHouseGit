@@ -1,0 +1,47 @@
+body {
+  font-family: "Staatliches", cursive;
+  video {
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+  main {
+    margin-top: 10px;
+    h1 {
+      font-size: 3rem;
+    }
+    .nosotros {
+      margin-bottom: 20px;
+      .nleft {
+        height: 400px;
+        background-image: url(../media/atencion.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-color: black;
+      }
+      .nright {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 400px;
+        background-color: $color8;
+        text-align: justify;
+        h2 {
+          font-size: 2em;
+          text-align: center;
+        }
+      }
+    }
+    .reserva {
+      text-align: center;
+      h2 {
+        font-size: 2em;
+      }
+    }
+  }
+}
