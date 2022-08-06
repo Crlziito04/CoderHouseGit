@@ -10,9 +10,12 @@ body {
     z-index: -1;
   }
   main {
-    margin-top: 10px;
+    margin-top: map-get($mapa1, margen-main);
     h1 {
-      font-size: 3rem;
+      font-size: map-get($mapa1, h1-size);
+      span {
+        color: map-get($mapa1, color-span);
+      }
     }
     .nosotros {
       margin-bottom: 20px;
@@ -24,16 +27,13 @@ body {
         background-position: center;
         background-color: black;
       }
-      .nright {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        height: 400px;
-        background-color: $color8;
-        text-align: justify;
-        h2 {
-          font-size: 2em;
-          text-align: center;
+      .derecha {
+        @extend .nright;
+        > h2 {
+          @extend .text-h2;
+        }
+        > p {
+          @extend .parrafo;
         }
       }
     }

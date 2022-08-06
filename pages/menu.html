@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="../css/estilo.css">
+  <link rel="stylesheet" href="../sass/estilo.css">
   <title>Beirut Menu</title>
 </head>
 
@@ -34,10 +34,10 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#">Contacto</a>
+              <a class="nav-link" href="./contacto.html">Contacto</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">RRHH</a>
+              <a class="nav-link" href="./rrhh.html">RRHH</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./Eventos.html">Eventos</a>
@@ -51,7 +51,7 @@
 
   <!--Inicio Main-->
   <main>
-    <div class="container">
+    <div class="container main">
       <div class="jumbotron text-center">
         <h1>Conoce nuestro <span>Menu</span></h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto eveniet, totam voluptatum optio eligendi
@@ -59,14 +59,15 @@
           facilis. Vel, obcaecati! Quae!.</p>
       </div>
 
-      <div>
 
-
-        <div class="row row-cols-1 row-cols-md-2 g-4">
-          <div class="col">
-            <div class="card">
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card card1">
+            <div class="tequeno">
               <img src="../media/tequeno.jpg" class="card-img-top" alt="tequeno">
-              <div class="card-body entrada">
+            </div>
+            <div class="card-body">
+              <div class="efecto_lista">
                 <ul class="lista">
                   <li>
                     <h5 class="card-title">Entradas</h5>
@@ -81,10 +82,14 @@
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="card">
+        </div>
+        <div class="col">
+          <div class="card2">
+            <div class="arepa">
               <img src="../media/arepa.jpg" class="card-img-top" alt="arepa">
-              <div class="card-body arepa">
+            </div>
+            <div class="card-body">
+              <div class="efecto_lista">
                 <ul class="lista">
                   <li>
                     <h5 class="card-title">Arepas</h5>
@@ -98,10 +103,14 @@
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="card">
+        </div>
+        <div class="col">
+          <div class="card3">
+            <div class="yankee">
               <img src="../media/yankee.jpg" class="card-img-top" alt="yankee">
-              <div class="card-body hamburguesa">
+            </div>
+            <div class="card-body">
+              <div class="efecto_lista">
                 <ul class="lista">
                   <li>
                     <h5 class="card-title">Hamburguesas</h5>
@@ -115,10 +124,14 @@
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="card">
-              <img src="../media/pizza.jpg" class="card-img-top" alt="pizza...">
-              <div class="card-body pizza">
+        </div>
+        <div class="col">
+          <div class="card card4">
+            <div class="pizza">
+              <img src="../media/pizza.jpg" class="card-img-top" alt="pizza">
+            </div>
+            <div class="card-body">
+              <div class="efecto_lista">
                 <ul class="lista">
                   <li>
                     <h5 class="card-title">Pizzas</h5>
@@ -133,20 +146,17 @@
             </div>
           </div>
         </div>
-
-
-
-
+      </div>
+    </div>
 
   </main>
   <!--FIN Main-->
 
   <!--Inicio Footer-->
-  <div class="footer__arriba">
-    <a class="icono" href="#arriba"><i class="fa-solid fa-angles-up"></i></a>
-  </div>
-
   <footer class="footer">
+    <div class="footer__arriba">
+      <a class="icono" href="#arriba"><i class="fa-solid fa-angles-up"></i></a>
+    </div>
     <section class="container-fluid">
       <div class="row">
         <div class="col-6">

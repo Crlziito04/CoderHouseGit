@@ -1,0 +1,19 @@
+.main__contacto {
+  background-image: url(../media/fondo.jpg);
+  background-position: center;
+  background-size: cover;
+  .imagen__contacto {
+    text-align: center;
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+    img {
+      width: 80%;
+      max-width: 450px;
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-bottom: 20px;
+    }
+  }
+}

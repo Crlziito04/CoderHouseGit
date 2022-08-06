@@ -1,0 +1,70 @@
+.card1 {
+  background-color: black;
+  .tequeno {
+    img {
+      @include sizes-img;
+    }
+  }
+  .card-body {
+    .efecto_lista:hover {
+      transition: 0.4s;
+      margin-bottom: 100px;
+    }
+    .efecto_lista {
+      @include lista;
+    }
+  }
+}
+.card2 {
+  background-color: black;
+  .arepa {
+    img {
+      @include sizes-img;
+    }
+  }
+  .card-body {
+    .efecto_lista:hover {
+      transition: 0.4s;
+      margin-bottom: 100px;
+    }
+    .efecto_lista {
+      @include lista;
+    }
+  }
+}
+
+.card3 {
+  background-color: black;
+  .yankee {
+    img {
+      @include sizes-img;
+    }
+  }
+  .card-body {
+    .efecto_lista:hover {
+      transition: 0.4s;
+      margin-bottom: 100px;
+    }
+    .efecto_lista {
+      @include lista;
+    }
+  }
+}
+
+.card4 {
+  background-color: black;
+  .pizza {
+    img {
+      @include sizes-img;
+    }
+  }
+  .card-body {
+    .efecto_lista:hover {
+      transition: 0.4s;
+      margin-bottom: 100px;
+    }
+    .efecto_lista {
+      @include lista;
+    }
+  }
+}
