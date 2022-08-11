@@ -2,7 +2,12 @@
   background-color: black;
   .tequeno {
     img {
+      border: 2px solid white;
+      border-radius: 5px;
       @include sizes-img;
+    }
+    img:hover {
+      opacity: 75%;
     }
   }
   .card-body {
@@ -18,8 +23,15 @@
 .card2 {
   background-color: black;
   .arepa {
+    img:hover {
+      opacity: 75%;
+    }
     img {
+      border: 2px solid white;
+      border-radius: 5px;
+      border-right: none;
       @include sizes-img;
+      margin-bottom: 25px;
     }
   }
   .card-body {
@@ -36,8 +48,15 @@
 .card3 {
   background-color: black;
   .yankee {
+    img:hover {
+      opacity: 75%;
+    }
     img {
+      border: 2px solid white;
+      border-radius: 5px;
+      border-right: none;
       @include sizes-img;
+      margin-bottom: 20px;
     }
   }
   .card-body {
@@ -54,7 +73,12 @@
 .card4 {
   background-color: black;
   .pizza {
+    img:hover {
+      opacity: 75%;
+    }
     img {
+      border: 2px solid white;
+      border-radius: 5px;
       @include sizes-img;
     }
   }

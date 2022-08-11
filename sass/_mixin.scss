@@ -5,7 +5,6 @@
 
 @mixin lista {
   .lista {
-    margin-top: -5px;
     list-style: none;
     li:hover {
       transition: 0.5s;
